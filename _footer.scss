@@ -1,0 +1,78 @@
+.footer {
+  position: relative;
+  padding: 32px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--color-primary-dark);
+  background-image: url("/images/footer-fon1.png");
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  left: 0;
+  background-image: url(../images/footerbreadleft.png);
+}
+
+.footer::after {
+  width: 380px;
+  height: 180px;
+  right: 0;
+  background-image: url(../images/footerbreadright.png);
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
+.adress-link {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-normal);
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.link:hover {
+  color: var(--color-brand-normal);
+}
+
+.address-copyright {
+  color: #a18268;
+  font-size: 14px;
+}
